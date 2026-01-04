@@ -22,5 +22,5 @@
 @layer utilities {}
 
 body {
-    @apply font-redhat text-base;
+    @apply font-redhat text-base text-rose-900;
 }
