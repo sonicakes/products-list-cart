@@ -3,7 +3,7 @@ import { useCart } from "../context/CartContext";
 
 const ProductCard = ({ product }) => {
   
-  const {cart, addToCart} = useCart();
+  const {cart, addToCart, reduceQuantity} = useCart();
   const exists = cart.some(cartItem => cartItem.id === product.id);
   const objSelected = cart.find((item) => item.id === product.id);
 
@@ -16,10 +16,15 @@ const ProductCard = ({ product }) => {
           {`rounded-lg aspect-square w-full max-w-md object-cover ${exists ? 'border-primary-red border-2' : ''}`}
         />
         {exists ? (
-          <Cta label={objSelected.qty} type="tools" onClickHandle={()=>addToCart(product)}/>
+          <Cta 
+            label={objSelected.qty} 
+            type="tools" 
+            onClickHandle={ () => addToCart(product)}
+            reduceHandle={ () => reduceQuantity(product)}
+          />
         ) : (
-        <Cta onClickHandle={()=>addToCart(product)} label="Add to Cart"/>
-
+        <Cta 
+        onClickHandle={()=>addToCart(product)} label="Add to Cart"/>
         )}
       </div>
       <p className="text-rose-400 text-xs font-semibold">{product.category}</p>

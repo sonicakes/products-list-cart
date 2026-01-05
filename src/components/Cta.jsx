@@ -1,6 +1,8 @@
 import add from "../assets/icons/icon-add-to-cart.svg";
+import plus from "../assets/icons/icon-increment-quantity.svg";
+import minus from "../assets/icons/icon-decrement-quantity.svg";
 
-const Cta = ({ onClickHandle, type = "general", label }) => {
+const Cta = ({ onClickHandle, type = "general", label, reduceHandle }) => {
   return (
     <button
       onClick={() => type === "general" && onClickHandle()}
@@ -14,16 +16,24 @@ const Cta = ({ onClickHandle, type = "general", label }) => {
         <>
           <span>
             <img className="w-5" src={add} />
-          </span>{" "}
-          <span>{label}</span>{" "}
+          </span>
+          <span>{label}</span>
         </>
       )}
 
       {type === "tools" && (
         <>
-          <span className="">-</span>
+          <span 
+            onClick={reduceHandle}
+            className="cursor-pointer p-0.5 rounded-full border border-rose-50 transition hover:bg-rose-50 h-4 w-4 flex justify-center items-center">
+            <img className="transition hover:invert-50 h-4 w-4" src={minus}/>
+          </span>
           <span>{label}</span>
-          <span className="cursor-pointer" onClick={onClickHandle}>+</span>
+          <span 
+            className="cursor-pointer hover:bg-rose-50 p-0.5 rounded-full transition border border-rose-50 h-4 w-4 flex justify-center items-center" 
+            onClick={onClickHandle}>
+            <img className="transition hover:invert-50 h-4 w-4" src={plus}/>
+          </span>
         </>
       )}
     </button>
