@@ -30,6 +30,9 @@ Users should be able to:
 - Reset their selections when they click "Start New Order"
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
+- Bonus: 
+1. Write unit tests to ensure all actions work correctly in isolation
+2. Add more products under the same categories and try implementing category-based filtering
 
 ### My Interpretation of the Challenge
 
