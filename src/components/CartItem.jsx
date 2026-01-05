@@ -15,10 +15,10 @@ const CartItem = ({ item, removeItem }) => {
       </p>
     </div>
     <div 
-      className="rounded-full hover:invert-80 cursor-pointer transition flex justify-center items-center w-4 h-4 border border-rose-300"
+      className="hover:invert-80 cursor-pointer transition w-4 h-full flex justify-center items-center "
       onClick={() => removeItem(item.id)}
     >
-      <img className="w-2.5 h-2.5 hover:invert-80 transition" src={remove}/>
+      <img className="rounded-full hover:invert-80 transition p-0.5 w-4 border border-rose-300" src={remove}/>
     </div>
     </div>
   );
