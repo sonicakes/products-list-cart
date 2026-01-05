@@ -1,8 +1,13 @@
 import ProductGrid from "./components/ProductGrid";
 import Cart from "./components/Cart";
-
+import Modal from "./components/Modal";
+import { useModal } from "./context/ModalContext";
 const App = () => {
+
+  const {isModalOpen, toggleModal} = useModal();
+
   return (
+    <>
     <div className="bg-rose-100">
       <div className="mx-auto max-w-5xl px-6 lg:px-8 py-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
@@ -15,6 +20,9 @@ const App = () => {
         </div>
       </div>
     </div>
+    {isModalOpen && (  <Modal />)}
+  
+    </>
   );
 };
 

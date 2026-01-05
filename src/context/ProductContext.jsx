@@ -13,7 +13,6 @@ export function ProductProvider({ children }) {
         const res = await fetch("https://69544beb1cd5294d2c7c57b2.mockapi.io/api/v1/products");
         if (!res.ok) throw new Error("failed to fetch");
         const data = await res.json();
-        console.log(data);
         setProducts(data);
       } catch (err) {
         setError(err);

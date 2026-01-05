@@ -37,7 +37,9 @@ I am using this challenge to practice the concept of Context API studied in the 
 
 ### Deviations from OG Design & Acceptance Criteria
 
-1. On mobile view, change the order of cart to be first on the screen & the grid to be second. I found that grid stacked in 1 col results in the long scroll (especially since I've added a few more items - see the point below), and the distance between adding an item and having to scroll so faw below to see it added to the cart is quite jarring. Similar problem exists in desktop view where the cart is a sidebar but not fixed (or its simply not stated its fixed positioned?) and when the grid gets large, the scroll is significant. I mention some potential solutions in the Continuous Dev section 
+1. On mobile view, change the order of cart to be first on the screen & the grid to be second. I found that grid stacked in 1 col results in the long scroll (especially since I've added a few more items - see the point below), and the distance between adding an item and having to scroll so faw below to see it added to the cart is quite jarring. Similar problem exists in desktop view where the cart is a sidebar but not fixed (or its simply not stated its fixed positioned?) and when the grid gets large, the scroll is significant. I mention some potential solutions in the Continuous Dev section.
+2. Added 'clear cart' icon & method to easily get rid of all items at once.
+3. I've created a mockapi & pasted the JSON data in there to practice fetching from a server-hosted platform. I've also expanded on the list of products, adding a few more varieties, with pictures from unsplash - using urls for images as opposed to hosted locally. 
 
 ### Screenshot
 
