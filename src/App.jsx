@@ -17,12 +17,20 @@ const App = () => {
               <Cart />
             </div>
           </div>
+          <a 
+            target="_blank" 
+            className="text-rose-400 mt-2 text-xs flex justify-end font-semibold hover:underline hover:text-primary-red" 
+            href="https://www.flaticon.com/free-icons/dessert" 
+            title="dessert icons"
+          >
+            Dessert icon (favicon) created by Febrian Hidayat - Flaticon</a>
         </div>
         {isModalOpen && (
           <>
-            <div className="overlay absolute bg-rose-900/50 h-full top-0 w-full left-0 z-60"></div>
+            <div className="overlay absolute bg-rose-900/70 h-full top-0 w-full left-0 z-60"></div>
           </>
         )}
+
       </div>
       {isModalOpen && (
         <>
