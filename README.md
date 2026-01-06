@@ -47,13 +47,13 @@ I am using this challenge to practice the concept of Context API studied in the 
 
 ![Desktop - Empty Cart](./public/screenshots/desktop-empty.png)
 
-![Desktop - Multiple Items Selected](./public/screenshots/desktop-multiple-items-selcted.png)
+![Desktop - Multiple Items Selected](./public/screenshots/desktop-multiple-items-selected.png)
 
 ![Mobile - Multiple Cart Items Selected](./public/screenshots/mobile-cart-item-selected.png)
 
 ### Links
 
-- Solution URL: [Product List With Cart - React](https://your-solution-url.com)
+- Solution URL: [Product List With Cart - React](https://www.frontendmentor.io/solutions/product-list-cart-with-react-Sg5nQUiURi)
 - Live Site URL: [Dessert Cart App - React](https://dez-cart-react.netlify.app/)
 
 ### Built with
