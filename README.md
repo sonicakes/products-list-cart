@@ -27,7 +27,7 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 - Bonus challenge: category-based filtering, design of the pills based on current CTAs
-- Bonus (TODO): Write unit tests to ensure all actions work correctly in isolation
+- Bonus Write unit tests to ensure all actions work correctly in isolation - I wrote 1 logic test & 1 rendering test. The logic tests if the quantity is added up. The UI test checks if the empty cart displays the correct text. I intend to add more test later.
 
 ### My Interpretation of the Challenge
 
@@ -63,6 +63,8 @@ I am using this challenge to practice the concept of Context API studied in the 
 - [Tailwind](https://tailwindcss.com/) - For styles
 - [MockAPI](https://mockapi.io/) - Mock API for desserts data
 - [Flaticons](https://www.flaticon.com/) - Free icons with attribution
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - tests for ui
+- [Vitest](https://vitest.dev/) - testing configured for Vite
 
 ### Continued development
 
@@ -70,6 +72,7 @@ There are a few solutions I'd like to implement to improve long grid scroll/cart
 - adding a 'Back to top' btn when scrolling product grid, as well as scrolling to the top/cart position every time an item gets added.
 - making cart fixed either at sidebar or header position to always be visible
 - (personal favourite): making a little sidebar initially hidden, then opening into view (aka shelf, sliding) on desktop, and serving as a burger menu/nav on mobile to free up space on both layouts. The cart icon to be only displaying the quantity of items added and on clicking, slide open the full cart view (a la Amazon and every other e commerce site).
-
+- sometimes fetch from mockapi returns CORS error & 503. Need to investigate (intermittent)
+- write more tests to check core logic & ui
 
 

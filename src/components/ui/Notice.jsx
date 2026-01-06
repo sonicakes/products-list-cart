@@ -1,4 +1,4 @@
-import carbon from "../assets/icons/icon-carbon-neutral.svg";
+import carbon from "../../assets/icons/icon-carbon-neutral.svg";
 
 const Notice = () => {
   return (

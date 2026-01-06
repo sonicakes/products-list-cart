@@ -1,5 +1,5 @@
-import { useProducts } from "../context/ProductContext";
-import Pill from "./Pill";
+import { useProducts } from "../../context/ProductContext";
+import Pill from "../ui/Pill";
 
 const Categories = () => {
   const { productCategories, toggleFilter, filter } = useProducts();

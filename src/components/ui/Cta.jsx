@@ -1,6 +1,6 @@
-import add from "../assets/icons/icon-add-to-cart.svg";
-import plus from "../assets/icons/icon-increment-quantity.svg";
-import minus from "../assets/icons/icon-decrement-quantity.svg";
+import add from "../../assets/icons/icon-add-to-cart.svg";
+import plus from "../../assets/icons/icon-increment-quantity.svg";
+import minus from "../../assets/icons/icon-decrement-quantity.svg";
 
 const Cta = ({ 
   onClickHandle, 
@@ -14,10 +14,10 @@ const Cta = ({
       onClick={() => (type === "general" || type === "confirm") && onClickHandle()}
       className={`${
         type === "tools"
-          ? "bg-primary-red text-xs font-semibold relative border-primary-red text-xs bottom-5 left-1/2 -translate-x-1/2 w-3/4 z-50 text-rose-50 justify-between h-[32px]"
+          ? "bg-primary-red font-semibold relative border-primary-red text-xs bottom-5 left-1/2 -translate-x-1/2 w-3/4 z-50 text-rose-50 justify-between h-[32px]"
           : type === "confirm" ?
           "bg-primary-red leading-4 transition hover:bg-rose-500 cursor-pointer text-sm w-full font-medium py-2.5 text-rose-100 flex justify-center"
-          : "gap-0.5 text-xs justify-center font-semibold h-[32px] w-3/4 bottom-5 left-1/2 -translate-x-1/2  z-50 relative border-rose-500 cursor-pointer transition hover:border-primary-red bg-rose-50 text-rose-500 hover:text-primary-red "
+          : "gap-0.5 text-xs justify-center font-semibold h-8 w-3/4 bottom-5 left-1/2 -translate-x-1/2  z-50 relative border-rose-500 cursor-pointer transition hover:border-primary-red bg-rose-50 text-rose-500 hover:text-primary-red "
       } flex  rounded-full  items-center px-2 py-1.5 border ${additionalClass}`}
     >
       {(type === "general" || type==="confirm") && (

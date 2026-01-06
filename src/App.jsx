@@ -1,6 +1,6 @@
-import ProductGrid from "./components/ProductGrid";
-import Cart from "./components/Cart";
-import Modal from "./components/Modal";
+import ProductGrid from "./components/Products/ProductGrid";
+import Cart from "./components/Cart/Cart";
+import Modal from "./components/ui/Modal";
 import { useModal } from "./context/ModalContext";
 const App = () => {
   const { isModalOpen } = useModal();

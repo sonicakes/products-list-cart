@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState, useContext } from "react";
+const API_URL = import.meta.env.VITE_API_URL;
 
 export const ProductContext = createContext();
 
@@ -15,9 +16,7 @@ export function ProductProvider({ children }) {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await fetch(
-          "https://69544beb1cd5294d2c7c57b2.mockapi.io/api/v1/products"
-        );
+        const res = await fetch(API_URL);
         if (!res.ok) throw new Error("failed to fetch");
         const data = await res.json();
         setProducts(data);

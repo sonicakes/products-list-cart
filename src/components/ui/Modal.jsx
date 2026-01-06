@@ -1,10 +1,10 @@
 import Cta from "./Cta";
-import OrderSummary from "./OrderSummary";
-import check from "../assets/icons/icon-order-confirmed.svg";
-import close from "../assets/icons/icon-remove-item.svg";
-import { useModal } from "../context/ModalContext";
-import { useCart } from "../context/CartContext";
-import { useProducts } from "../context/ProductContext";
+import OrderSummary from "../Products/OrderSummary";
+import check from "../../assets/icons/icon-order-confirmed.svg";
+import close from "../../assets/icons/icon-remove-item.svg";
+import { useModal } from "../../context/ModalContext";
+import { useCart } from "../../context/CartContext";
+import { useProducts } from "../../context/ProductContext";
 
 const Modal = () => {
   const { clearCart } = useCart();

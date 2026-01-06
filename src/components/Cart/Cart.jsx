@@ -1,15 +1,16 @@
-import pie from "../assets/images/illustration-empty-cart.svg";
+import pie from "../../assets/images/illustration-empty-cart.svg";
 import { FaRegTrashAlt } from "react-icons/fa";
-import OrderSummary from "./OrderSummary";
-import { useCart } from "../context/CartContext";
-import Cta from "./Cta";
-import { useModal } from "../context/ModalContext";
-import Notice from "./Notice";
+import OrderSummary from "../Products/OrderSummary";
+import { useCart } from "../../context/CartContext";
+import Cta from "../ui/Cta";
+import { useModal } from "../../context/ModalContext";
+import Notice from "../ui/Notice";
+import { calculateTotalItems } from "../../helpers/cartHelpers";
 
 const Cart = () => {
   const { cart, clearCart } = useCart();
-  const itemCount = cart.reduce((acc, item) => acc + item.qty, 0);
-  const { isModalOpen, toggleModal } = useModal();
+  const itemCount = calculateTotalItems(cart);
+  const { toggleModal } = useModal();
 
   return (
     <div className="bg-rose-50 rounded-lg p-5 flex flex-col">
@@ -39,7 +40,6 @@ const Cart = () => {
        <OrderSummary />
           <Notice />
        <Cta label="Confirm Order" type="confirm" onClickHandle={toggleModal} />
-
       </>)
      }
 

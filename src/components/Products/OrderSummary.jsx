@@ -1,5 +1,5 @@
-import { useCart } from "../context/CartContext";
-import CartItem from "./CartItem";
+import { useCart } from "../../context/CartContext";
+import CartItem from "../Cart/CartItem";
 
 const OrderSummary = ({ versionConfirm }) => {
   const { cart, removeFromCart } = useCart();

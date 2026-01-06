@@ -1,4 +1,4 @@
-import remove from "../assets/icons/icon-remove-item.svg";
+import remove from "../../assets/icons/icon-remove-item.svg";
 
 const CartItem = ({ item, versionConfirm, removeItem }) => {
   return (

@@ -1,5 +1,5 @@
-import Cta from "./Cta";
-import { useCart } from "../context/CartContext";
+import Cta from "../ui/Cta";
+import { useCart } from "../../context/CartContext";
 
 const ProductCard = ({ product }) => {
   

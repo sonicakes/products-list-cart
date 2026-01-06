@@ -1,4 +1,4 @@
-import { useProducts } from "../context/ProductContext";
+import { useProducts } from "../../context/ProductContext";
 import Categories from "./Categories";
 import ProductCard from "./ProductCard";
 
